@@ -1,5 +1,8 @@
 FROM nikolaik/python-nodejs:python3.11-nodejs19
 
+sudo rm /etc/apt/sources.list.d/yarn.list
+sudo apt-get update
+
 RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list && \
     sed -i '/security.debian.org/d' /etc/apt/sources.list && \
     apt-get update && \
