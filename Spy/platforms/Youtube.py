@@ -15,9 +15,9 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from youtubesearchpython import VideosSearch, CustomSearch
 import base64
-from Nunnu import LOGGER
-from Nunnu.utils.database import is_on_off
-from Nunnu.utils.formatters import time_to_seconds
+from Spy import LOGGER
+from Spy.utils.database import is_on_off
+from Spy.utils.formatters import time_to_seconds
 from config import YT_API_KEY, YTPROXY_URL as YTPROXY
 
 logger = LOGGER(__name__)
