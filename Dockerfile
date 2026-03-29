@@ -1,8 +1,7 @@
 FROM nikolaik/python-nodejs:python3.11-nodejs20
 FROM debian:bookworm
 
-RUN -f /etc/apt/sources.list
-sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list
+RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /etc/apt/sources.list
   sed -i '/security.debian.org/d' /etc/apt/sources.list
 fi
 
