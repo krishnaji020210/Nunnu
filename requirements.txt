@@ -26,4 +26,5 @@ yt-dlp
 git+https://github.com/yt-dlp/yt-dlp
 youtube-search
 youtube-search-python
+youtube-search-python
 wget
