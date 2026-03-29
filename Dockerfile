@@ -6,8 +6,6 @@ RUN sed -i 's|http://deb.debian.org/debian|http://archive.debian.org/debian|g' /
     apt-get install -y --no-install-recommends ffmpeg aria2 && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-    sudo rm /etc/apt/sources.list.d/yarn.list
-sudo apt-get update
 
 
 COPY . /app/
