@@ -16,6 +16,13 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 MONGO_DB_URI = getenv("MONGO_DB_URI")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 54000))
+import os
+
+# YouTube API key (required)
+YT_API_KEY = os.environ.get("YT_API_KEY" , None ) ## Your API key like: xbit_10000000xx0233 Get from  https://t.me/tgmusic_apibot
+
+# Optional YouTube proxy URL
+YTPROXY = os.environ.get("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
 
 SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "54000")
